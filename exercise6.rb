@@ -1,4 +1,9 @@
-#Part 1
-grocery_list = ["bacon", "pork", "ham"]
-grocery_list.each {|item| puts "* #{item}"}
+def printList(list)
+  list.each {|item| puts "* #{item}"}
+end
 
+grocery_list = ["bacon", "pork", "ham"]
+printList(grocery_list)
+
+grocery_list << "rice"
+printList(grocery_list)
